@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<!--I pledge my honor that I have abided by the Stevens Honor System.
+			-Stephen Szemis, Sean Trinh, Gerald Remig, James Spaniak, Philip Giordano -->
+	<title>Tutoring by Politicians</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="tutors.css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<script src="form.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Tutoring by Politicians</h1>
+		<nav>
+		<ul id="navbar">
+			<li class="list"><a class="link" href="index.html">Main Page</a></li>
+			<li class="list"><a class="link" href="about.html">About</a></li>
+			<li class="list"><a class="link" href="tutors.html">Tutors</a></li>
+			<li class="list"><a class="link" href="request.html">Request a Tutor</a></li>
+		</ul>
+		</nav>
+	</header>
+
+	<section>
+		<h1>Request a Tutor!</h1>
+		<form class="content" id="request" onsubmit="submitForm()">
+			<input type="text" name="firstname" placeholder="First Name">
+			<input type="text" name="lastname" placeholder="Last Name">
+			<input list="tutorselect" name="tutors" placeholder="Requested Tutor">
+			<datalist id="tutorselect">
+				<option value="Donald Trump">
+				<option value="Bernie Sanders">
+				<option value="Hillary Clinton">
+				<option value="Chris Christie">
+			</datalist>
+			<br><br>
+			<select name="day">
+				<option value="0">Sunday</option>
+				<option value="1">Monday</option>
+				<option value="2">Tuesday</option>
+				<option value="3">Wednesday</option>
+				<option value="4">Thursday</option>
+				<option value="5">Friday</option>
+				<option value="6">Saturday</option>
+			</select>
+			<br><br>
+			<input type="reset" value="Reset">
+			<input type="submit" value="Submit">
+		</form> 
+	</section>
+
+
+<footer>
+&copy; 2016-2016 Stevens Institute of Technology CS-146B Group 5 - Tutoring by Politicians
+</footer>
+
+</body>
+</html>
